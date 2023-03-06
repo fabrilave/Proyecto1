@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<input type="text">
+<button>este es otro boton</button>
+<p style="color:blueviolet">hola desde {{ entidad }}, estas en la cursada {{ cursada }}</p>
+la feha en la que coremos el codigo es {{ fecha }} <br>
+la lista ingresada es {{ lista }}
+{% for numero in lista %}
+    <br>El numero es: {{ numero }}
+{% endfor %}
+<br> mi diccionario es {{ diccionario }}
+{% for key, value in diccionario.items %}
+    <br>los datos son: {{ key }} : {{ value }}
+{% endfor %}
+<br><br>
+{% if cursada == '32' %}
+    <h1>Estas en la cursada correcta</h1>
+{% else %}
+    <h1>Estas en la cursada incorrecta</h1>
+{% endif %}
+</body>
+</html>
